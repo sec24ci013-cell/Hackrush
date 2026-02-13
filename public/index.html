@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shared Grocery Optimizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shared Grocery Shopping Optimizer</h1>
+
+    <!-- Budget Section -->
+    <h2>Set Family Budget</h2>
+    <input id="budgetInput" type="number" placeholder="Enter monthly budget">
+    <button onclick="setBudget()">Set Budget</button>
+
+    <!-- Family Expense Section -->
+    <h2>Family Expense & Budget</h2>
+    <div id="familyExpense"></div>
+
+    <!-- Request Items Section -->
+    <h2>Request Items</h2>
+    <div class="form">
+      <input id="requestName" placeholder="Item needed">
+      <input id="requestQuantity" type="number" placeholder="Quantity">
+      <button onclick="addRequest()">Add Request</button>
+    </div>
+
+    <ul id="requestList"></ul>
+  </div>
+
+    <!-- Expense Summary -->
+    <h2>Expense Summary</h2>
+    <ul id="summaryList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
