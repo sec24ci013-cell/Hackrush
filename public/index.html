@@ -6,9 +6,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <h1 style="margin:0 0 0 0">ShareCart - Shared Grocery Shopping Optimizer</h1>
+    
   <div class="container">
-    <h1>Shared Grocery Shopping Optimizer</h1>
-
     <!-- Budget Section -->
     <h2>Set Family Budget</h2>
     <input id="budgetInput" type="number" placeholder="Enter monthly budget">
@@ -20,19 +21,23 @@
 
     <!-- Request Items Section -->
     <h2>Request Items</h2>
-    <div class="form">
+    <div class="form" >
       <input id="requestName" placeholder="Item needed">
       <input id="requestQuantity" type="number" placeholder="Quantity">
       <button onclick="addRequest()">Add Request</button>
     </div>
 
     <ul id="requestList"></ul>
+    <!-- Expense Summary -->
+    <div class="Expense_Summary">
+    <h2 id="expsum">Expense Summary</h2>
+    <ul id="summaryList"></ul>
   </div>
 
-    <!-- Expense Summary -->
-    <h2>Expense Summary</h2>
-    <ul id="summaryList"></ul>
+  </div>
 
+    
+  
   <script src="script.js"></script>
 </body>
 </html>
